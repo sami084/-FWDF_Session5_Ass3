@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+		<head>
+    	<title> Object Literal....</title>
+		</head>
+    	<body>
+		<h2> Student Details.</h2>
+
+		<p id="demo"></p>
+
+		<script language="javascript">
+		var StudentDetails = { 	//Created a StudentDetails Object literal
+    	studentName : "Sumit Jain",
+  		DOB : "10 Nov 1980",
+    	Skills : ["Java","CSS","HTML5"],
+		Address:  //Created a nested object as Address which contains properties as city, state, country, pincode.					
+		{
+		City: "Banglore", 
+		State: "Karnataka",
+		Country: "India",
+		Pincode: "858958",
+		}
+		};
+ 		StudentDetails.Eyecolor = "Blue"; // Added the new property as eyecolor and mother name of Student.
+		StudentDetails.motherName = " Mrs. Jain";
+	
+		delete StudentDetails.DOB; //Deleted one property of my choice e.i. Student DOB. <br>
+
+		//displayed the Student details.
+
+		document.getElementById("demo").innerHTML = "Student Name :" + StudentDetails.studentName + "<br> <br>" + " Programming Skills :" + 		        StudentDetails.Skills +"<br> <br>" + " Address : " + StudentDetails.Address.City + "," + StudentDetails.Address.State + ","+ StudentDetails.Address.Country+ "-" + StudentDetails.Address.Pincode + "<br> <br>" +" Mother's Name :"+ StudentDetails.motherName + "<br> <br>" + "Eyecolor :" +StudentDetails.Eyecolor ;
+    
+    	</script>
+
+		</body>
+</html>
